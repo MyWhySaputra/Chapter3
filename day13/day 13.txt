@@ -1,0 +1,86 @@
+Database secara sederhana bisa diartikan sebagai tempat pengumpulan data.
+
+Database berfungsi sebagai gudang penyimpanan data untuk diolah lebih lanjut.
+
+Jenis - jenis database
+Berdasarkan Arsitektur
+1. Centralized Database Management System (CDBMS)
+2. Distributed Databe Management System (DDBMS)
+
+Berdasarkan Model
+1. Hierarchical Database Model
+2. Network Database Model
+3. Relation Database Model
+4. Object-Oriented Databse Model
+5. NoSQL Database Model
+
+Kalau dari arsitekturnya, kita bisa membedakan rumah dari struktur yang menopang bangunan, misalnya rumah kayu, rumah dengan batu bata, dan sebagainya.
+
+Kalau dari modelnya, kita bisa membedakan rumah dari cara/gaya rumah tersebut, misalnya rumah gaya jepang, rumah minimalis, rumah scandinavian, dan sebagainya.
+
+Centralized Database Management System (CDBMS)
+- CDBMS adalah jenis database yang disimpan, terletak, dan dipelihara di satu lokasi aja.
+- Jenis database ini dimodifikasi dan dikelola dari lokasi itu sendiri. Lokasi terpusat database bisa diakses lewat koneksi internet (LAN, WAN, dll).
+- Di sistem ini, semua proses utama dan fungsi sistem manajemen database seperti user application programs dan user interface programs berada secara terpusat di satu komputer dengan kecepatan dan kapasitas tinggi.
+- Komputer pusat ini disebut juga dengan mainframe atau server.
+- Di arsitektur terpusat kayak gini, terminal komputer (client) cuma bisa menampilkan display dan kontrol yang terbatas pas akses data dari server. Karena eh karena, terminal komputer (client) ini nggak memungkinkan punya resource yang lebih, gengs.
+
+Kelebihan
+● Mengurangi risiko manajemen data, kayak data berbeda di database lain karena lokasinya semua terpusat.
+● Data lebih konsisten karena mengelola data dalam repositori pusat.
+● Kualitas data lebih baik, memungkinkan penetapan standar data.
+● Lebih hemat biaya karena lebih sedikit usaha yang diperlukan buat menangani kumpulan data.
+
+Kekurangan
+● Ukuran database terpusat besar, jadi memperlambat waktu respons buat mengambil data.
+● Nggak mudah buat memperbarui sistem basis data yang begitu luas.
+● Kalau terjadi kegagalan server, seluruh data bakal hilang, yang bisa jadi kerugian besar.
+
+Distributed Database Management System (DDBMS)
+- Sama kayak namanya, distributed ini berarti database yang terdistribusi atau tersebar ke beberapa perangkat.
+- Kebalikan dari Centralized DBMS, Distributed DBMS adalah database yang perangkat penyimpanannya nggak terpasang pada satu perangkat hardware yang sama. 
+- Database tersebut disimpan di beberapa hardware yang terletak di tempat yang sama atau tersebar lewat jaringan komputer lainnya yang saling berhubungan.
+- Sistem ini nggak sama kayak sistem paralel dengan database yang biasanya terpusat di satu hardware.
+- Sistem ini terdistribusi lewat jaringan yang saling terhubung dan nggak punya komponen fisik.
+- Lewat sistem administrator-nya, database bisa mendistribusikan sekumpulan data ke beberapa lokasi perangkat yang berada di server jaringan yang terorganisir.
+
+Dua jenis distributed DBMS
+● Homogen = Sistem yang di tiap tempatnya menjalankan tipe DBMS yang sama.
+● Heterogen = Sistem yang tiap tempatnya menjalankan DBMS yang berbeda, baik Relational DBMS (RDBMS) atau Non-Relational DBMS.
+
+Hal penting yang harus ada di arsitektur Distributed DBMS
+● Independensi = Jadi, pengguna nggak perlu tahu di mana data berada.
+● Transaksi terdistribusi = Dengan sistem distributed, pengguna bisa akses dan ubah data pada database dari beberapa tempat karena database nggak terpusat, sob.
+● Transparansi = Hal ini mengacu pada prinsip dasar dari DBMS, tujuannya supaya sistem ini terlihat kayak database terpusat.Transparansi memberikan kemudahan bagi pengguna, tapi akibatnya banyak permasalahan yang bakal timbul dan harus diatasi sama DDBMS.
+
+Kelebihan
+● Database ini bisa gampang banget diperluas karena data sudah tersebar di berbagai lokasi fisik
+● Database terdistribusi bisa gampang banget diakses dari jaringan yang berbeda
+● Basis data ini lebih aman dibandingkan dengan basis data terpusat
+
+Kekurangan
+● Basis data ini mahal banget dan sulit dipelihara karena kerumitannya
+● Dalam database ini, sulit buat memberikan tampilan yang seragam kepada pengguna karena tersebar di lokasi fisik yang berbeda
+
+Perbedaan
+CDBMS = Ini adalah database yang disimpan, terletak serta dipelihara di satu lokasi saja.
+DDBMS = Terdiri dari beberapa database yang terhubung satu sama lain dan tersebar di lokasi fisik yang berbeda.
+
+CDBMS = Waktu akses data bisa lebih lambat kalau ada beberapa pengguna yang akses dalam waktu bersamaan.
+DDBMS = Waktu akses data bisa lebih cepat dibandingkan dengan Centralized Database kalau ada beberapa pengguna mengakses dalam waktu bersamaan.
+
+CDBMS = Pengelolaan, modifikasi, dan backup database ini lebih gampang karena seluruh data ada di lokasi yang sama.
+DDBMS = Pengelolaan, modifikasi, dan backup database ini sangat sulit karena tersebar di lokasi fisik yang berbeda.
+
+CDBMS = Database ini memberikan tampilan yang seragam dan lengkap kepada semua pengguna.
+DDBMS = Karena tersebar di lokasi yang berbeda, sulit buat memberikan tampilan yang seragam kepada pengguna.
+
+CDBMS = Data di Centralized Database lebih konsisten dibandingkan dengan Distributed Database.
+DDBMS = Database ini mungkin memiliki beberapa replikasi data, jadi konsistensi data kurang.
+
+CDBMS = User nggak bisa akses database kalau terjadi kegagalan database.
+DDBMS = Dalam database terdistribusi, kalau satu database gagal, pengguna punya akses ke database lain.
+
+CDBMS = Database terpusat lebih murah.
+DDBMS = Database ini lebih mahal dari Centralized Database.
+
