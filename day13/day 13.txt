@@ -110,3 +110,66 @@ Berikut ini adalah beberapa kasus penggunaan dan penerapan ERD:
 3. Membantu proses pengumpulan informasi = Kalau bikin ERD secara konseptual yang menggambarkan objek dari sistem, kita bisa menentukan sistem informasi dari database. Model awal kayak gitu juga bisa dikembangkan jadi model database fisik yang membantu pembuatan database relasional, atau membantu pembuatan peta proses dan model aliran data.
 4. Penambahan fitur database = ERD bisa jadi alat bantu visual buat proses identifikasi awal, yaitu menentukan fitur apa yang bisa ditambahkan di sistem database yang udah ada. Dengan adanya desain ERD ini, kita bisa dapat gambaran visual kondisi yang benar-benar mencerminkan struktur database fisik.
 
+Dalam merancang ERD, kita harus melewati beberapa tahapan
+● Tahap 1 – Tentukan entitas yang bakal terlibat atau menentukan tabel.
+● Tahap 2 – Tentukan atribut dari masing-masing entitas.
+● Tahap 3 – Tentukan relationship antar entitas.
+● Tahap 4 – Buat model ERD.
+
+Tools ERD = https://erdplus.com/
+
+Data Flow Diagram (DFD)
+Data Flow Diagram dikenal juga sebagai DFD atau aliran data yang digunakan dalam metodologi teknik analisis dan desain terstruktur pada akhir tahun 1970-an.
+
+Berbeda dengan ERD yang menjelaskan hubungan antar entitas (tabel) di dalam sebuah database.
+
+Data-flow diagram (DFD) bisa dengan cepat jadi cara yang populer buat memvisualisasikan langkah-langkah utama dan data yang terlibat dalam proses sistem perangkat lunak.
+
+DFD berisi entitas, proses, aliran data, dan data store yang memberikan indikasi tentang bagaimana sebuah data ditransformasikan pada satuan data yang bergerak melalui sistem.
+
+Beberapa komponen dalam penggunaan dan penerapan DFD:
+● Komponen Terminator / Entitas Luar
+Terminator mewakili entitas eksternal yang berkomunikasi dengan sistem yang sedang dikembangkan. 
+Biasanya terminator dikenal dengan nama entitas luar (external entity).
+
+Terdapat dua jenis terminator :
+1. Terminator Sumber (source), yaitu terminator yang menjadi sumber. 
+2. Terminator Tujuan (sink), yaitu terminator yang menjadi tujuan data / informasi sistem.
+
+● Komponen Proses
+Komponen proses menggambarkan bagian dari sistem yang mentransformasikan input menjadi output.
+
+Berikut adalah hal-hal yang perlu diperhatikan tentang proses : 
+1. Proses harus memiliki input dan output.
+2. Proses dapat dihubungkan dengan komponen terminator, data store atau proses melalui alur data.
+3. Sistem/bagian/divisi/departemen yang sedang dianalisis oleh profesional sistem digambarkan dengan komponen proses.
+
+● Komponen Data Store
+Komponen ini digunakan buat bikin model sekumpulan paket data dan diberi nama dengan kata benda jamak, misalnya Mahasiswa.
+Data store ini biasanya berkaitan dengan penyimpanan-penyimpanan kayak file atau database yang berkaitan dengan penyimpanan secara komputerisasi, misalnya file disket, file hard disk, file pita magnetik. 
+Data store juga berkaitan dengan penyimpanan secara manual kayak buku alamat, file folder, dan agenda.
+
+● Komponen Data Flow / Aliran Data
+Suatu data flow / alur data digambarkan dengan anak panah, yang menunjukkan arah menuju ke dan keluar dari suatu proses. 
+Alur data ini dipakai buat menerangkan perpindahan data atau paket data/informasi dari satu bagian sistem ke bagian lainnya.
+
+Berikut adalah beberapa manfaat dari DFD :
+1. Penggambaran sistem
+FD bisa kamu pakai buat menggambarkan sistem sebagai suatu jaringan yang fungsional.
+
+2. Pembuatan model
+Selain menggambarkan sistem, DFD juga bisa dipakai buat bikin sebuah model yang baru, gengs.
+Kamu bisa menekankan fungsi sistem-sistem tertentu buat melihat bagian yang lebih detail dari DFD tersebut.
+
+3. Penyampaian rancangan sistem
+DFD bisa menggambarkan alur data secara lebih mudah melalui pendekatan visual, sob.
+Jadi, kamu bisa menggambarkan rancangan sistem pakai DFD dan menyampaikannya pada programmer, pembuat sistem, klien, dan siapa pun yang perlu mengetahuinya.
+
+Dalam merancang DFD, kita harus melewati beberapa tahapan
+● Tahap 1 - Tentukan entitas yang bakal terlibat.
+● Tahap 2 - Tentukan proses utama (sistem informasi) dengan masing-masing sub-prosesnya.
+● Tahap 3 - Tentukan aliran data antar entitas dengan proses.
+● Tahap 4 - Tentukan data store pada proses yang terjadi atau pada entitas.
+● Tahap 5 - Buat model DFD.
+
+Tools DFD = https://creately.com/
