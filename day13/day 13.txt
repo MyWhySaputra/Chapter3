@@ -84,3 +84,29 @@ DDBMS = Dalam database terdistribusi, kalau satu database gagal, pengguna punya 
 CDBMS = Database terpusat lebih murah.
 DDBMS = Database ini lebih mahal dari Centralized Database.
 
+Database Management System (DBMS)
+DBMS adalah tools/software yang memungkinkan pengguna buat mendefinisikan, mengelola, dan mengontrol akses ke database.
+
+DBMS yang paling banyak dipakai saat ini adalah database relational yang dikenal dengan Relational DBMS (RDBMS).
+
+DBMS pada dasarnya punya tugas buat mengelola data, database engine, dan schema database biar proses manajemen dan pengorganisasian data bisa berjalan dengan lancar
+
+Manfaat DBMS
+1. Kecepatan dan kemudahan = DBMS bisa mengurutkan dan mengelompokkan data dengan cepat.
+2. Multi-user = DBMS bisa diakses sama banyak pengguna secara bersamaan.
+3. Keamanan data = karena secara sistem udah dilengkapi sama password, jadi cuma bisa diakses sama pengguna yang diizinkan aja.
+4. Penghematan biaya perangkat = Bagi perusahaan besar yang punya cabang di mana-mana, penggunaan DBMS yang terpusat di satu tempat bisa menghemat biaya.
+5. Kontrol data terpusat = Selain itu, server database yang terpusat juga memudahkan kontrol dan akses terhadap data.
+6. Mudah membuat aplikasi = Kalau perusahaan butuh aplikasi input data yang baru, programmer nggak perlu buat ulang struktur database lagi.
+
+Entity Relationship Diagram (ERD)
+ERD ini adalah jenis diagram struktural yang dipakai buat mendesain database.
+
+Diagram ini dideskripsikan sebagai model yang menjelaskan isi dan hubungan data pada suatu database dalam bentuk entitas, atribut, serta hubungan antar entitas.
+
+Berikut ini adalah beberapa kasus penggunaan dan penerapan ERD:
+1. Desain database = Dengan menggambar ERD buat memvisualisasikan ide desain database, kita punya kesempatan buat menemukan kesalahan dan kekurangan desain.
+2. Debugging database = Debugging adalah proses penelusuran dan perbaikan terhadap database kalau terjadi masalah atau error di dalamnya. Kalau pakai ERD, kita bisa gampang banget buat menemukan entitas, melihat atributnya, dan mengidentifikasi hubungan tiap-tiap entitas yang berpotensi bermasalah.
+3. Membantu proses pengumpulan informasi = Kalau bikin ERD secara konseptual yang menggambarkan objek dari sistem, kita bisa menentukan sistem informasi dari database. Model awal kayak gitu juga bisa dikembangkan jadi model database fisik yang membantu pembuatan database relasional, atau membantu pembuatan peta proses dan model aliran data.
+4. Penambahan fitur database = ERD bisa jadi alat bantu visual buat proses identifikasi awal, yaitu menentukan fitur apa yang bisa ditambahkan di sistem database yang udah ada. Dengan adanya desain ERD ini, kita bisa dapat gambaran visual kondisi yang benar-benar mencerminkan struktur database fisik.
+
