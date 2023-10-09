@@ -42,3 +42,66 @@ Biasanya, semua sistem menggunakan Structured Query Language (SQL) sebagai bahas
 Relasi data ini, ada hubungannya sama isi database, gengs! Namanya adalah Relational Keys.
 
 Ada lima jenis Relational Keys
+
+Super Key (semua unik (tidak ada yang sama))
+Super key adalah kombinasi kolom yang jadi identitas setiap baris dalam tabel secara unik.
+Tiap baris dari Tabel Stok Produk terdiri dari kolom Kode Produk, Merek Produk, dan Stok.
+Kombinasi dari semua kolom ini yang bakal menghasilkan keunikan dari tiap baris.
+
+Candidate Key
+Candidate Key adalah bagian dari Super Key. Bedanya, atribut pada Candidate Key nggak berulang.
+Alasannya, karena data di kolom Kode Produk dan Merek Produk nggak bisa punya informasi yang berulang, jadi tiap baris di kolom tersebut punya identitas khas-nya masing-masing.
+Sementara di kolom stok, ada kemungkinan baris pertama dan ketiga jumlah stok-nya sama. Karena nggak bisa mewakili keunikan tiap barisnya, jadi kolom ini nggak masuk sebagai Candidate Key!
+
+Perbandingan antara Super Key dan Candidate Key
+Super Key = Super Key adalah kumpulan kolom yang dipakai buat secara unik mengidentifikasi semua baris dalam suatu tabel.
+Candidate Key = Candidate Key adalah bentuk yang lebih kecil dan spesifik dari Super Key.
+
+Super Key = Dalam sebuah tabel, jumlah Super Key lebih banyak dari pada jumlah Candidate Key
+Candidate Key = Dalam suatu tabel, jumlah Candidate Key lebih sedikit dari jumlah Super Key.
+
+Super Key = Nggak semua Super Key bisa jadi Candidate Key.
+Candidate Key = Semua Candidate Key adalah Super Key.
+
+Primary Key
+Adalah suatu atribut (bisa satu atau lebih) yang dipakai buat memastikan bahwa tiap baris dalam tabel tersebut bersifat unik.
+Syarat kolom yang dijadikan Primary key itu kayak gini, nih:
+● Bersifat unik atau berbeda dengan nilai kolom lainnya.
+● Nilai atribut nggak boleh Null (kosong, nggak diketahui, nggak bisa ditentukan)
+
+Foreign Key
+Suatu kolom (bisa satu atau lebih) yang dipakai sebagai penghubung antara tabel satu dengan tabel yang lainnya pada database.
+Tujuannya buat menjaga hubungan antar data dan memungkinkan navigasi antara dua tabel yang berbeda.
+Foreign key ini bertindak sebagai referensi silang antara dua tabel yang punya Primary Key di tabel lainnya.
+
+Perbedaan antara Primary Key dan Foreign Key!
+Primary Key = Nilai kolom bersifat unik
+Foreign Key = Boleh punya nilai kolom yang sama lebih dari satu dalam satu tabel
+
+Primary Key = Nggak boleh Null
+Foreign Key = Dapat punya beberapa nilai null
+
+Primary Key = Cuma ada satu Primary Key dalam satu tabel 
+Foreign Key = Boleh punya lebih dari satu Foreign Key dalam satu tabel
+
+Primary Key = Nilai di Primary Key nggak bisa dihapus dari tabel induk
+Foreign Key = Nilai pada Foreign Key bisa dihapus dari tabel
+
+Primary Key = Nggak ada batasan dalam memasukkan nilai pada Primary Key asalkan nilainya berbeda setiap row nya
+Foreign Key = Nggak ada batasan dalam memasukkan nilai pada Foreign Key
+
+Alternate Key
+Dari contoh tadi, kita punya Candidate Key yang terdiri dari kolom Kode Produk dan Merek Produk. Terus, kita memilih satu Primary Key, yaitu Kode Produk.
+Karena kolom Merek Produk ini nggak terpilih jadi Primary Key, berarti ia disebut sebagai Alternate Key!
+
+Kelebihan Relational Database Model
+● Data bisa cepat banget diakses
+● Struktur database gampang buat dilakukan perubahan
+● Data direpresentasikan secara logik, jadi user nggak butuh cara buat menyimpan data
+● Gampang buat membentuk query yang kompleks dalam melakukan pengambilan data
+● Gampang buat membangun dan memodifikasi program aplikasi
+
+Kekurangan Relational Database Model
+● Kelompok informasi/tables yang berbeda harus dilakukan relasi (join) buat melakukan pengambilan data.
+● User harus familiar dengan relasi antar tabel.
+
