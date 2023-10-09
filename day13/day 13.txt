@@ -2,6 +2,8 @@ Database secara sederhana bisa diartikan sebagai tempat pengumpulan data.
 
 Database berfungsi sebagai gudang penyimpanan data untuk diolah lebih lanjut.
 
+Proses yang bisa di digitalisasi = tetap dan berulang-ulang
+
 Jenis - jenis database
 Berdasarkan Arsitektur
 1. Centralized Database Management System (CDBMS)
@@ -117,6 +119,7 @@ Dalam merancang ERD, kita harus melewati beberapa tahapan
 ● Tahap 4 – Buat model ERD.
 
 Tools ERD = https://erdplus.com/
+Tools ERD = https://dbdiagram.io/home
 
 Data Flow Diagram (DFD)
 Data Flow Diagram dikenal juga sebagai DFD atau aliran data yang digunakan dalam metodologi teknik analisis dan desain terstruktur pada akhir tahun 1970-an.
