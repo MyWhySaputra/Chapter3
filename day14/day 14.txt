@@ -1,2 +1,44 @@
 Model Database adalah suatu konsep yang terintegrasi dalam menggambarkan hubungan (relationships) antar data, serta batasan-batasan (constraint) data dalam suatu sistem database.
 
+Hierarchical Database Model
+Model ini biasa disebut juga sebagai model pohon karena hubungan di dalamnya digambarkan kayak pohon (tree-structured) yang dibalik.
+Simpul yang paling atas disebut akar (root) dan paling bawah disebut daun.
+Model ini juga mirip sama pola hubungan orangtua – anak (parent – child).
+Seorang orang tua bisa punya satu anak (jenis hubungan satu ke satu, one to one) atau punya beberapa anak (jenis hubungan satu ke banyak, one to many). 
+Tapi, satu anak cuma boleh punya satu orang tua aja(jenis hubungan satu ke satu, one to one).
+
+Kelebihan
+● Data bisa dengan cepat dilakukan pengambilan
+● Integritas data mudah dilakukan pengaturan
+
+Kekurangan
+● Pengguna harus familiar banget sama struktur database
+● Terjadi redundansi data
+
+Network Database Model
+Hierarchical Database Model tadi punya kelemahan yaitu nggak mampu mengelola hubungan banyak ke banyak (Many to Many).
+Kelemahan dari Hierarchical Database Model diatasi dengan adanya Network Database Model ini!
+Dalam model ini, data direpresentasikan sebagai koleksi record dan hubungan antar record direpresentasikan sebagai pointer.
+
+Kelebihan
+● Data lebih cepat diakses
+● User bisa mengakses data dimulai dari beberapa tabel
+● Mudah memodelkan database yang komplek
+● Mudah membentuk query yang komplek dalam melakukan retrieve data
+
+Kekurangan
+● Struktur database nggak mudah buat dilakukan modifikasi.
+● Perubahan struktur database yang telah didefinisikan bakal mempengaruhi program aplikasi yang mengakses database.
+● User harus memahami struktur database.
+
+Kedua model yang baru aja kita pelajari itu udah nggak banyak dipakai lagi, sob.
+Alasannya, karena dua model ini punya banyak kelemahan dan cuma cocok buat struktur hirarki dan jaringan aja, jadi nggak mampu buat mengakomodir berbagai macam jenis persoalan dalam suatu sistem database.
+
+Relational Database Model
+Model ini adalah model yang paling matang dan paling umum dipakai dari semua model database. Di sini, data diorganisir berdasarkan relasi data.
+Banyak banget perangkat lunak yang pakai sistem ini buat mengatur dan memelihara database lewat hubungan setiap data. 
+Biasanya, semua sistem menggunakan Structured Query Language (SQL) sebagai bahasa pemrograman buat pemeliharaan relasi antar database.
+
+Relasi data ini, ada hubungannya sama isi database, gengs! Namanya adalah Relational Keys.
+
+Ada lima jenis Relational Keys
