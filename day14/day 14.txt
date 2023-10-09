@@ -138,3 +138,61 @@ Kekurangan
 
 Dari seluruh model tadi, yang lebih sering dipakai sama banyak perusahaan adalah Relational Database Model.
 
+Di dalam dunia pemrograman, ada dua tipe database yang banyak digunakan, yaitu SQL dan NoSQL.
+
+SQL
+SQL adalah akronim dari Structured Query Language yang secara sederhana menggunakan SQL sebagai bahasanya.
+Di dalam SQL, kita bisa menyimpan data dalam bentuk tabel yang di dalamnya ada row dan column. 
+Buat setiap datanya kita sebut dengan row, sedangkan informasi-informasi yang ada di suatu data kita sebut dengan column.
+
+Berikut contoh DBMS yang berbasis Structured Query Language:
+
+PostgreSQL
+Software database ini pakai pola manajemen database relasional.
+Sistem ini berguna sebagai tempat penyimpanan data yang aman dan bisa mengembalikan data tersebut sebagai respon atas request dari berbagai aplikasi lainnya.
+
+Microsoft SQL Server 
+Software database ini dibangun oleh Microsoft.
+Sebagai server database, sistem ini merupakan produk perangkat lunak yang berfungsi menyimpan dan mengambil data sesuai permintaan aplikasi lainnya.
+
+MySQL 
+Ini adalah software database untuk manajemen database relasional. 
+Banyak banget produk-produk IT yang dibuat pakai komponen utama MySQL. 
+Contohnya kayak WordPress, Google, Flickr, Youtube, Facebook, Joomla, phpBB, Drupal, dan MODx yang pakai sistem ini buat manajemen database relasional mereka.
+
+Microsoft Access
+Microsoft Access menyimpan data dengan formatnya sendiri. Lewat software ini pengguna bisa mengimpor atau menghubungkan langsung data yang tersimpan ke database lainnya.
+Microsoft Access cocok banget dipakai di sistem informasi dengan distributed database, karena penyimpanan file nggak perlu server database aktif sehingga bersifat portable.
+
+Kalau tadi udah bahas tentang SQL, sekarang kita bahas tentang saudaranya yang bernama NoSQL.
+
+NoSQL
+NoSQL (Not Only SQL atau Not SQL) adalah database yang nggak pakai bahasa SQL dalam melaksanakan query. 
+NoSQL ini kebalikan dari SQL. Artinya, setiap database NoSQL punya bahasanya sendiri.
+
+Contoh yang DBMS yang berbasis NoSQL:
+
+MongoDB
+Merupakan software database yang berorientasi sama dokumen open source dan cross platform. MongoDB ini adalah software DBMS NoSQL yang sangat populer digunakan. 
+MongoDB pakai dokumen yang mirip kayak skema JSON, oleh sebab itu sistemnya diklasifikasikan ke dalam program basis data NoSQL.
+MongoDB ini menyimpan datanya dalam bentuk documents (kalau di SQL istilahnya rows). Dokumen tersebut berbentuk objek seperti JSON, yang berarti gak ada kaidah baku dalam pembuatan dokumen.
+Jadi, setiap dokumen bisa memiliki bentuk data yang berbeda-beda. 
+Di dalam dokumen itu terdapat beberapa field (kalau di SQL istilahnya columns). Fields tersebut formatnya berpasangan, berupa key dan value. Dokumen akan disimpan di dalam sebuah collections (kalau di SQL istilahnya tables).
+
+Bedanya SQL sama MongoDB yang NoSQL:
+SQL = Database
+NoSQL = Database
+
+SQL = Table
+NoSQL = Collection
+
+SQL = Column
+NoSQL = Field
+
+SQL = Row
+NoSQL = Document
+
+SQL = Join Table
+NoSQL = Embedded Document
+
+Link PostgreSQL = https://www.postgresql.org/
