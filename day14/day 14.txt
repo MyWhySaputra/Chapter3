@@ -1,0 +1,2 @@
+Model Database adalah suatu konsep yang terintegrasi dalam menggambarkan hubungan (relationships) antar data, serta batasan-batasan (constraint) data dalam suatu sistem database.
+
