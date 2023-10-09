@@ -105,3 +105,36 @@ Kekurangan Relational Database Model
 ● Kelompok informasi/tables yang berbeda harus dilakukan relasi (join) buat melakukan pengambilan data.
 ● User harus familiar dengan relasi antar tabel.
 
+Object-Oriented Database Model
+Ini adalah database model yang menyimpan informasi dalam bentuk object. Object yang dimaksud tersebut dipakai dalam OOP atau Object Oriented Programming.
+Pas kemampuan database bergabung sama kemampuan OOP, hasilnya bakal berupa Object-Oriented Database Model ini~
+
+Object-Oriented Database Model ideal buat pemrograman object oriented karena pas dilakukan proses developing, controller dan model sama-sama menggunakan object.
+Object-Oriented Database Model dibuat untuk menggantikan Relational Database Model kalau bahasa pemrograman yang digunakan adalah OOP.
+
+Kelebihan
+● Proses penyimpanan dan pengambilan data lebih sederhana
+● Program mengakses data dengan object-nya secara langsung, jadi kinerja program akan lebih tinggi
+
+Kekurangan
+● Kekurangan dukungan platform, kebanyakan Object-Oriented Database Model cumaa mendukung bahasa pemrograman C++, C# dan Java saja.
+● Kebutuhan keterampilan, dikarenakan Object-Oriented Database Model masih tergolong baru dan masih relatif jarang penggunanya.
+● Sulit bermigrasi, dibutuhkan komitmen yang kuat dalam memilih DBMS yang akan digunakan, sekali bermigrasi ke Object-Oriented Database Model, akan sulit untuk kembali ke RDBMS.
+
+NoSQL Database Model
+Ini adalah database model yang menyediakan mekanisme untuk penyimpanan dan pengambilan data selain menggunakan relasi tabel yang dipakai dalam Relational Database Model.
+NoSQL Database Model mencakup kesederhanaan desain dan gampang banget bagi kita buat meningkatkan performa dan kapasitas mesin.
+Struktur data yang dipakai sama NoSQL Database Model berbeda dari yang dipakai dalam Relational Database Model, jadi beberapa operasi juga bisa dilakukan lebih cepat di NoSQL.
+
+Kelebihan
+● Skalabilitas tinggi dan ketersediaan tinggi.
+● Memungkinkan developer buat bikin perubahan dengan cepat tanpa mempengaruhi aplikasi.
+
+Kekurangan
+● Masih relatif baru.
+● Open source, jadi buat support tergantung pada komunitas.
+● GUI (User Interface) nggak tersedia.
+● Ukuran dokumen besar.
+
+Dari seluruh model tadi, yang lebih sering dipakai sama banyak perusahaan adalah Relational Database Model.
+
