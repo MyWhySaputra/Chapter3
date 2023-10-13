@@ -1,0 +1,99 @@
+Jenis SQL (Structured Query Language) 
+
+Data Definition Language (DDL)
+Data Definition Language adalah perintah yang kita pakai buat mendefinisikan suatu struktur, baik itu table, database, dan lain-lain.
+
+Berikut ini contoh perintah DDL:
+● CREATE
+● ALTER
+● DROP
+
+Data Manipulation Language (DML)
+Data Manipulation Language adalah perintah yang kita pakai buat melakukan manipulasi data dalam suatu database. Manipulasi itu bisa berupa mencari data, membuat data, mengubah data, dan menghapus data.
+
+Berikut ini contoh perintah DML:
+● SELECT
+● INSERT
+● UPDATE
+● DELETE
+
+Data Control Language (DCL)
+Data Control Language adalah perintah yang kita pakai buat mengubah hak akses, memberikan roles, dan isu lain yang berhubungan sama keamanan database.
+
+Berikut adalah contoh perintah DCL:
+● GRANT
+● REVOKE
+
+Transaction Control Language (TCL)
+Transaction Control Language adalah perintah yang berurusan sama transaksi database.
+
+Berikut contoh perintah dari TCL:
+● BEGIN
+● COMMIT
+● ROLLBACK
+
+Selanjutnya kita bakal bahas gimana cara menggunakan perintah query buat Data Definition Language (DDL).
+
+Perintah DDL yang pertama adalah create
+
+CREATE TABLE articles (
+    id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL,
+    approved BOOLEAN NOT NULL DEFAULT FALSE,
+);
+
+Perintah DDL kedua adalah alter
+
+Sama kayak perintah DDL create, kita juga bakal bahas dua jenis dari alter gengs, yaitu alter database dan alter table.
+
+ALTER TABLE articles
+ADD COLUMN create_at TIMESTAMP NOT NULL;
+
+Perintah DDL ketiga yang bakal kita coba implementasi adalah drop
+
+● Perintah drop untuk menghapus database
+
+DROP DATABASE nama_database;
+
+● Perintah drop untuk menghapus table
+
+DROP TABLE nama_table;
+
+Selanjutnya, kita bakal menggunakanperintah query buat melakukan dasar CRUD (Create - Read - Update - Delete) dengan PostgreSQL
+
+Insert
+Perintah insert ini dipakai buat memasukkan baris data baru (create) di dalam sebuah table.
+
+INSERT INTO (
+    title,
+    body,
+    approved
+) VALUES ("Hello World", "Lorem Ipsum ", TRUE);
+
+Select
+Perintah select ini dipakai buat mencari data (read) di dalam database. Perintah select sebenarnya bisa kompleks banget, tergantung kita mau cari data yang kayak apa.
+
+SELECT * FROM articles;
+
+SELECT * FROM articles WHERE articles.approved = TRUE;
+
+SELECT id, title FROM articles;
+
+Update
+Perintah update ini dipakai buat memperbarui atau meng-update suatu data di dalam sebuah table.
+
+UPDATE articles SET approved = FALSE WHERE articles.title = 'Hello World';
+
+Delete
+Perintah delete ini dipakai buat menghapus suatu data di dalam sebuah table.
+
+● Perintah delete untuk menghapus data di table articles yang tidak di-approve
+
+DELETE FROM articles WHERE articles.approved = FALSE;
+
+Stored Procedure
+stored procedure adalah kumpulan pernyataan/procedure SQL yang disimpan dalam database, gengs.
+
+Stored procedure bisa nerima parameter, kamu juga bisa mengatur variabel, menulis pernyataan IF, dan lainnya dalam stored procedure.
+
