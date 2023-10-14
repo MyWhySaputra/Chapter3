@@ -32,6 +32,8 @@ Berikut contoh perintah dari TCL:
 ● COMMIT
 ● ROLLBACK
 
+tcl (membungkus proses, contoh transaksi bank)
+
 Selanjutnya kita bakal bahas gimana cara menggunakan perintah query buat Data Definition Language (DDL).
 
 Perintah DDL yang pertama adalah create
