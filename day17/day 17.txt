@@ -1,0 +1,1 @@
+RDBMS adalah program yang melayani sistem basis data yang entitas utamanya terdiri dari tabel-tabel yang mempunyai relasi dari satu tabel ke tabel yang lain.
