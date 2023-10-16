@@ -1,1 +1,39 @@
-skip
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Nasabah {
+  ID_Nasabah INT [primary key]
+  Nama VARCHAR(255)
+  Alamat VARCHAR(255)
+  Nomor_Telepon VARCHAR(20)
+  Email VARCHAR(100)
+  Tanggal_Lahir DATE
+  createdAt TIMESTAMP
+  updatedAt TIMESTAMP
+  deletedAt TIMESTAMP
+}
+
+Table Akun {
+  ID_Akun SERIAL [primary key]
+  ID_Nasabah INT
+  Jenis_Akun VARCHAR(50)
+  Saldo DECIMAL(15, 2)
+  createdAt TIMESTAMP
+  updatedAt TIMESTAMP
+  deletedAt TIMESTAMP
+}
+
+Table Transaksi {
+  ID_Transaksi SERIAL [primary key]
+  ID_Akun INT
+  Tanggal_Transaksi DATE
+  Jumlah_Transaksi DECIMAL(15, 2)
+  Keterangan VARCHAR(255)
+  createdAt TIMESTAMP
+  updatedAt TIMESTAMP
+  deletedAt TIMESTAMP
+}
+
+Ref: Transaksi.ID_Akun > Akun.ID_Akun
+
+Ref: Nasabah.ID_Nasabah < Akun.ID_Nasabah
